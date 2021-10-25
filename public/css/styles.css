@@ -55,6 +55,10 @@ h3{
     font-weight: 400;
 }
 
+.banner{
+    max-height: 250px;
+}
+
 .burger-menu{
     display: block;
     max-width: 40px;
@@ -68,6 +72,7 @@ h3{
     margin: auto;
     margin-bottom: 20px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .copyright{
@@ -119,7 +124,7 @@ main{
 }
 
 article{
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .descripcion{
@@ -173,10 +178,6 @@ main section article i{
     position: absolute;
     top: -22px;
     right: 20px
-}
-
-.articulo-2, .articulo-3, .articulo-4{
-    display: none;
 }
 
 .registro p, .login p{
@@ -244,15 +245,21 @@ p label.categorias{
     .burger-menu{
         display: none;
     }
-    .articulo-2{
-        display: block;
-        margin-left: 40px;
-    }
     .ultima-visita{
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .articulo-1, .articulo-2, .articulo-3, .articulo-4{
+        max-width: 40vw;
+    }
+    .articulo-1, .articulo-2{
+        margin-bottom: 40px;
     }
     .seccion-ofertas{
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     .header-top{
         display: flex;
@@ -323,13 +330,8 @@ p label.categorias{
         max-width: 300px;
         margin: 0 20px;
     }
-    .articulo-3{
-        display: block;
-        margin-left: 40px;
-    }
-    .articulo-4{
-        display: block;
-        margin-left: 40px;
+    .articulo-1, .articulo-2, .articulo-3, .articulo-4{
+        max-width: 20vw;
     }
     .vista-horizontal{
         display: flex;
