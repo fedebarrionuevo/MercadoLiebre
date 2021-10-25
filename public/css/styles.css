@@ -54,6 +54,7 @@ h3{
     text-align: center;
     margin-top: 10px;
     font-weight: 400;
+    font-size: 18px;
 }
 
 .banner{
@@ -126,6 +127,7 @@ main{
 
 article{
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .descripcion{
@@ -247,7 +249,15 @@ p label.categorias{
 @media (min-width: 481px) {
     .opciones{
         display: flex;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 2vw;
+    }
+    .opciones ul{
+        display: flex;
+    }
+    .opciones li{
+        margin: 0 6px;
     }
     .burger-menu{
         display: none;
@@ -314,11 +324,8 @@ p label.categorias{
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .opciones ul{
-        display: flex;
-    }
-    .opciones li{
-        margin: 0 6px;
+    .opciones a{
+        font-size: 16px;
     }
     .header-top{
         display: flex;
@@ -327,7 +334,7 @@ p label.categorias{
         align-items: center;
     }
     .frase-top{
-        max-width: 250px;
+        max-width: 32%;
         text-align: right;
     }
     .logo{
