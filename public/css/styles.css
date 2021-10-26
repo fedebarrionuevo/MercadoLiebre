@@ -58,7 +58,9 @@ h3{
 }
 
 .banner{
-    max-height: 250px;
+    max-width: 1500px;
+    display: block;
+    margin: auto;
 }
 
 .burger-menu{
