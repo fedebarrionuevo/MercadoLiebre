@@ -1,171 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+<%- include('./partials/head')%>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>Creá tu cuenta</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/styles.css">
-</head>
-
-<body>
-    <header>
-        <div class="header-top">
-            <a href="/" class="logo"><img src="/img/logo-mercado-liebre.svg" class="img-logo" alt="Logo"></a>
-            <div class="buscar">
-                <input type="texto" name="busqueda" placeholder="Buscar productos, marcas...">
-                <button type="search" class="btn">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
-                <h2 class="frase-top">
-                    <i class="fas fa-hand-holding-usd">
-                    </i>Comprá en cuotas y sin tarjeta de
-                    crédito
-                </h2>
-        </div>
-        <nav class="opciones">
-            <ul>
-                <li><a href="">Ofertas</a></li>
-                <li><a href="">Tiendas Oficiales</a></li>
-                <li><a href="">Vender</a></li>
-                <li><a href="">Ayuda</a></li>
-            </ul>
-            <ul>
-                <li><a href="/registro">Creá tu cuenta <i class="far fa-address-card"></i></a></li>
-                <li><a href="/ingresar">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                <li><a href="">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-            </ul>
-        </nav>
-        <form action="" method="">
-            <div class="burger-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-        </form>
-    </header>
-    <main>
-        <form action="/" method="" class="registro">
-            <div class="vista-horizontal">
-            <div class="div1">
-                <p>
-                    <label for="nombre-apellido">Nombre y apellido:</label>
-                <p>
-                    <input type="text" name="nombre-apellido" id="nombre-apellido" class="texto" required>
-                </p>
-                </p>
-                <p>
-                    <label for="user">Nombre de usuario:</label>
-                <p>
-                    <input type="text" name="user" id="user" class="texto" required>
-                </p>
-                </p>
-                <p>
-                    <label for="email">E-mail:</label>
-                <p>
-                    <input type="email" name="email" id="email" class="texto" required>
-                </p>
-                </p>
-                <p>
-                    <label for="fecha-nacimiento">Fecha de nacimiento:</label>
-                <p>
-                    <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" class="texto" required>
-                </p>
-                </p>
-                <p>
-                    <label for="domicilio">Domicilio:</label>
-                <p>
-                    <input type="text" name="domicilio" id="domicilio" class="texto" required>
-                </p>
-                </p>
-                <p>
-                    <label>Perfil de usuario:</label>
-                <p class="perfiles">
-                    <label for="comprador">Comprador</label><input type="radio" name="perfil" value="Comprador"
-                        id="comprador" checked>
-                    <label for="vendedor">Vendedor</label><input type="radio" name="perfil" value="Vendedor"
-                        id="vendedor">
-                </p>
-                </p>
-            </div>
-            <div class="div2">
-                <p>
-                    <label>Categoría de interés:</label>
-                <p>
-                    <input type="checkbox" name="intereses" value="Electro" id="electro"><label for="electro"
-                        class="categorias">Electro</label>
-                </p>
-                <p>
-                    <input type="checkbox" name="intereses" value="Moda" id="moda"><label for="moda"
-                        class="categorias">Moda</label>
-                </p>
-                <p>
-                    <input type="checkbox" name="intereses" value="Hogar" id="hogar"><label for="hogar"
-                        class="categorias">Hogar</label>
-                </p>
-                <p>
-                    <input type="checkbox" name="intereses" value="Jugueteria" id="jugueteria"><label for="jugueteria"
-                        class="categorias">Juguetería</label>
-                </p>
-                <p>
-                    <input type="checkbox" name="intereses" value="Vida sana" id="vida sana"><label for="vida sana"
-                        class="categorias">Vida sana</label>
-                </p>
-                </p>
-                <p>
-                    <label>Seleccione su foto de usuario:</label>
-                <p>
-                    <input type="file" name="foto" accept=".jpg">
-                </p>
-                </p>
-                <p>
-                    <label for="password">Cree su contraseña:</label>
-                <p>
-                    <input type="password" name="password" id="password" class="texto" minlength="4" maxlength="20" required>
-                </p>
-                </p>
-                <p>
-                    <label for="confirmar">Confirme su contraseña:</label>
-                <p>
-                    <input type="password" name="password" id="confirmar" class="texto" required>
-                </p>
-                </p>
-            </div>
-        </div>
-            <p>
-                <button type="submit" class="button-blue">Enviar</button>
-                <button type="reset" class="button-blue">Borrar</button>
-            </p>
-        </form>
-    </main>
-    <footer>
-        <div class="div-footer">
-            <div class="div-footer-1">
-                <div class="icons-footer"><i class="fas fa-credit-card"></i></div>
-                <h4>Pagá con tarjeta o en efectivo</h4>
-                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago.
-                    ¡Y siempre es
-                    seguro!</p>
-            </div>
-            <div class="div-footer-2">
-                <div class="icons-footer"><i class="fas fa-gift"></i></div>
-                <h4>Envío gratis desde $2.500</h4>
-                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un
-                    beneficio de
-                    Mercado Puntos.</p>
-            </div>
-            <div class="div-footer-3">
-                <div class="icons-footer"><i class="fas fa-user-shield"></i></div>
-                <h4>Seguridad, de principio a fin</h4>
-                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás
-                    siempre
-                    protegid@.</p>
-            </div>
-        </div>
-        <div class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</div>
-    </footer>
-</body>
+    <body>
+        <%- include('./partials/header')%>
+            <main>
+                <form action="/" method="" class="registro">
+                    <div class="vista-horizontal">
+                        <div class="div1">
+                            <p>
+                                <label for="nombre-apellido">Nombre y apellido:</label>
+                            <p>
+                                <input type="text" name="nombre-apellido" id="nombre-apellido" class="texto" required>
+                            </p>
+                            </p>
+                            <p>
+                                <label for="user">Nombre de usuario:</label>
+                            <p>
+                                <input type="text" name="user" id="user" class="texto" required>
+                            </p>
+                            </p>
+                            <p>
+                                <label for="email">E-mail:</label>
+                            <p>
+                                <input type="email" name="email" id="email" class="texto" required>
+                            </p>
+                            </p>
+                            <p>
+                                <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                            <p>
+                                <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" class="texto" required>
+                            </p>
+                            </p>
+                            <p>
+                                <label for="domicilio">Domicilio:</label>
+                            <p>
+                                <input type="text" name="domicilio" id="domicilio" class="texto" required>
+                            </p>
+                            </p>
+                            <p>
+                                <label>Perfil de usuario:</label>
+                            <p class="perfiles">
+                                <label for="comprador">Comprador</label><input type="radio" name="perfil"
+                                    value="Comprador" id="comprador" checked>
+                                <label for="vendedor">Vendedor</label><input type="radio" name="perfil" value="Vendedor"
+                                    id="vendedor">
+                            </p>
+                            </p>
+                        </div>
+                        <div class="div2">
+                            <p>
+                                <label>Categoría de interés:</label>
+                            <p>
+                                <input type="checkbox" name="intereses" value="Electro" id="electro"><label
+                                    for="electro" class="categorias">Electro</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="intereses" value="Moda" id="moda"><label for="moda"
+                                    class="categorias">Moda</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="intereses" value="Hogar" id="hogar"><label for="hogar"
+                                    class="categorias">Hogar</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="intereses" value="Jugueteria" id="jugueteria"><label
+                                    for="jugueteria" class="categorias">Juguetería</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="intereses" value="Vida sana" id="vida sana"><label
+                                    for="vida sana" class="categorias">Vida sana</label>
+                            </p>
+                            </p>
+                            <p>
+                                <label>Seleccione su foto de usuario:</label>
+                            <p>
+                                <input type="file" name="foto" accept=".jpg">
+                            </p>
+                            </p>
+                            <p>
+                                <label for="password">Cree su contraseña:</label>
+                            <p>
+                                <input type="password" name="password" id="password" class="texto" minlength="4"
+                                    maxlength="20" required>
+                            </p>
+                            </p>
+                            <p>
+                                <label for="confirmar">Confirme su contraseña:</label>
+                            <p>
+                                <input type="password" name="password" id="confirmar" class="texto" required>
+                            </p>
+                            </p>
+                        </div>
+                    </div>
+                    <p>
+                        <button type="submit" class="button-blue">Enviar</button>
+                        <button type="reset" class="button-blue">Borrar</button>
+                    </p>
+                </form>
+            </main>
+            <%- include('./partials/footer')%>
+    </body>
 
 </html>
