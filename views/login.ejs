@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('./partials/head')%>
 
-    <body>
-        <%- include('./partials/header')%>
-            <main>
-                <form action="/" method="" class="login">
-                    <p>
-                        <input type="text" name="user" id="user" class="texto" placeholder="Nombre de usuario" required>
-                    </p>
-                    <p>
-                        <input type="password" name="password" id="password" class="texto" placeholder="Contraseña"
-                            required>
-                    </p>
-                    <button type="submit" class="button-blue">Enviar</button>
-                </form>
-            </main>
-            <%- include('./partials/footer')%>
-    </body>
+<head>
+    <%- include('./partials/head')%>
+        <title>Ingresá</title>
+</head>
+
+<body>
+    <%- include('./partials/header')%>
+        <main>
+            <form action="/" method="" class="login">
+                <p>
+                    <input type="text" name="user" id="user" class="texto" placeholder="Nombre de usuario" required>
+                </p>
+                <p>
+                    <input type="password" name="password" id="password" class="texto" placeholder="Contraseña"
+                        required>
+                </p>
+                <button type="submit" class="button-blue">Enviar</button>
+            </form>
+        </main>
+        <%- include('./partials/footer')%>
+</body>
 
 </html>
